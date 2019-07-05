@@ -1,4 +1,4 @@
-# Cornershop Frontend Test
+# Frontend Test
 
 ## Before you begin
 You will need to create a repository using the base project that we provided and invite as collaborators: @daslaf @fyanezv @redthree @raerpo @erasmo-marin
