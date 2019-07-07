@@ -1,11 +1,11 @@
-console.log('Babel & ReactJs Setup ');
+import React, { Component } from "react";
+import { render } from "react-dom";
+import PropTypes from "prop-types";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+//import './Css/Styles.css';
+ 
+import CounterApp from './Components/CounterApp.js';
 
-const title = ('Babel & ReactJs ya configurado');
+const node = document.getElementById("root");
 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('root')
-);
+render(<CounterApp />, node);
