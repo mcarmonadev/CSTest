@@ -3,7 +3,7 @@ var app         = express();
 var bodyParser  = require("body-parser");
 var compression = require("compression");
 var morgan      = require("morgan");
-var PORT        = Number( process.env.PORT || 3000 );
+var PORT        = Number( process.env.PORT || 3003 );
 var counters    = require("./lib/counters");
 
 app.use(morgan("combined"));
@@ -19,7 +19,7 @@ function sendFile(name) {
 
 app.get("/", sendFile("index.html"));
 app.get("/app.js", sendFile("app.js"));
-app.get("/app.css", sendFile("app.css"));
+//app.get("/app.css", sendFile("app.css"));
 
 // [json] GET /api/v1/counters
 // => [
