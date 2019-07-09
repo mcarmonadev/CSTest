@@ -6,7 +6,337 @@ html, body {
 .MainContainer {
 	width: 100%;
 	height: 100%;
-	background-color: red;
+	background-color: white;
   	height: 100vh;
     display: inline-flex;
 }
+
+.SideContainer {
+	width: 20%;
+	background-color: blue;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      15px;
+    font-weight:    bold;
+    border:2px solid gray;
+}
+
+.SideBarTitle {
+	width: 100%;
+	height: 40px;
+	background-color: gray;
+	text-align: center;
+	line-height: 40px;   
+    color: white;
+}
+
+.CountersListHeaders {
+	width: 100%;	
+	height: 40px;
+	background-color: gray;
+    padding-right: 0px;
+  	border-width: 1px 0px 0px 0px;
+    border:1px solid white;
+  	display: flex;
+}
+
+.CountersListHeader {
+	width: 70%;	
+	height: 20px;
+    padding-top: 5px;
+    border:1px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+.CountersListHeader_Title {
+	width: 65%;	
+}
+.CountersListHeader_Count {
+	width: 35%;	
+}
+
+.CountersList {
+	width: 100%;
+    flex-grow : 1;
+	background-color: lightgray;
+  overflow-y: scroll;
+}
+
+
+.CounterItem{
+	width: 100%;	
+	height: 55px;
+	background-color: lightgray;
+    margin-top: 2px;
+    display: inline-flex;
+}
+.CounterItem:hover{
+   background-color:white;
+   color: black;
+   cursor: pointer;
+}
+
+.CounterItem_selected{
+	background-color: orange;
+	color: blue;
+}
+
+.CounterItemIco{
+	width: 50px;	
+	height: 48px;
+    margin-top: 5px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.CounterItemLabel{
+	width:80%;	
+	height: 40px;
+	text-align: left;
+	padding-right: 10px;
+    margin-top:10px;
+    margin-left: 15px;
+}
+
+.CounterItemDetails{
+	width:90%;	
+	height: 50%;
+	text-align: left;
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      15px;
+    font-weight:    bold;
+    margin-top:0px;
+}
+
+.CounterItemActions{
+	width:90%;	
+	height: 20%;
+    margin-left: 0px;
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+    font-weight:    bold;
+    color: black;
+    margin-top:2px;
+
+}
+
+.CounterItemAction{
+	width: 32%;	
+    display: inline-flex;
+    -webkit-user-select:none; 
+    -webkit-touch-callout:none; 
+         -moz-user-select:none; 
+         -ms-user-select:none; 
+         user-select:none; 
+}
+
+.CounterItemAction_Inc{
+	text-align: left;
+}
+.CounterItemAction_Inc:hover{
+   background-color:white;
+   color: blue;
+   cursor: pointer;
+}
+
+.CounterItemAction_Dec{
+	text-align: center;
+}
+.CounterItemAction_Dec:hover{
+   background-color:white;
+   color: darkred;
+   cursor: pointer;
+}
+
+.CounterItemAction_Del{
+	text-align: right;
+}
+.CounterItemAction_Del:hover{
+   background-color:white;
+   color: red;
+   cursor: pointer;
+}
+
+
+.CentralContainer {
+  width: 30%;
+  background-color: white;
+  height: 100%;
+
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      15px;
+    font-weight:    bold;
+    border:1px solid black;
+}
+
+.CounterEditor{
+  width: 100%;
+  height: 125px;
+
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      15px;
+    font-weight:    bold;
+    border: 1px  solid black;
+}
+
+
+.BlockTitle {
+	width: 100%;
+	height: 40px;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 40px;   
+    color: black;
+    border: 1px  solid black;
+}
+
+.CounterEditor_Fields{
+	width:100%;	
+	height: 30px;
+    margin-left: 0px;
+    font-family:    Arial, Helvetica, sans-serif;
+    font-weight:    bold;
+    color: black;
+    margin-top:30px;
+  display: flex;
+
+}
+.CounterEditor_Label_Title{
+	width:28%;	
+	height: 28px;
+    margin-left: 10px;
+    color: black;
+    margin-top:4px;
+    font-size:      17px;
+    text-align: center;
+}
+.CounterEditor_Input{
+	width:53%;	
+	height: 40%;
+    margin-left: -5px;
+    color: black;
+    margin-top:2px;
+
+}
+
+.CounterEditor_DivBtn{
+	width:20%;	
+	height: 40%;
+    color: black;
+    margin-top:1px;
+
+}
+
+.CounterEditor_Btn {
+	width: 59px;	
+	height: 20px;
+	line-height: 20px;   
+	background-color: gray;
+	text-align: center;
+    margin-top: 1px;
+    font-size:      10px;
+    font-weight:    bold;
+    margin-left: -5px;
+    cursor: pointer;
+    color: white;
+    border:1px solid gray;
+}
+.CounterEditor_Btn:hover{
+   background-color:lightgray;
+   color: blue;
+}
+
+
+
+.FilterPanel{
+  width: 100%;  
+  height: 355px;
+  flex-grow : 1;
+}
+
+
+
+.FilterBy_Fields{
+  width:100%; 
+  height: 45px;
+  float: left;
+    margin-left: 0px;
+    font-family:    Arial, Helvetica, sans-serif;
+    font-weight:    bold;
+    color: black;
+    margin-top:0px;
+    display: inline-flex;
+    border: 1px  solid black;
+
+}
+
+.FilterBy_Label{
+  width:28%;  
+  height: 28px;
+    margin-left: 10px;
+    color: black;
+    margin-top:13px;
+    font-size:      17px;
+    text-align: center;
+}
+.FilterBy_Input{
+  width:53%;  
+  height: 40%;
+    margin-left: -5px;
+    color: black;
+    margin-top:11px;
+
+}
+.FilterBy_DivBtn{
+  width:20%;  
+  height: 40%;
+    color: black;
+    margin-top:10px;
+
+}
+
+.CounterFilter_Btn {
+  width: 59px;  
+  height: 20px;
+  line-height: 20px;   
+  background-color: gray;
+  text-align: center;
+    margin-top: 1px;
+    font-size:      10px;
+    font-weight:    bold;
+    margin-left: -5px;
+    cursor: pointer;
+    color: white;
+    border:1px solid gray;
+}
+.CounterFilter_Btn:hover{
+   background-color:lightgray;
+   color: blue;
+}
+
+.FilterBy_Label_Center{
+  width:90%;  
+  height: 25px;
+    margin-left: 19px;
+    color: black;
+    margin-top:8px;
+    font-size:      17px;
+    text-align: center;
+    background-color: #ffcc00;
+    border:1px solid gray;
+}
+
+.FilterBy_Label_Font{
+  width:90%;  
+  height: 15px;
+    margin-left: 19px;
+    color: black;
+    margin-top:5px;
+    font-size:      13px;
+    text-align: center;
+}
+
+

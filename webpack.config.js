@@ -33,13 +33,13 @@ module.exports = {
 
   devServer: {
     contentBase: './static',
-    port: 3000,
+    port: 3001,
     proxy: {
           '/api': {
              target: {
                 host: "localhost",
                 protocol: 'http:',
-                port: 8000
+                port: 3000
              }
           },
           headers: {
