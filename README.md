@@ -1,3 +1,10 @@
+#Agregado inciso de la entrega (09-07-2019):
+0. Hay dos instancias posibles de servidor: dev, y static
+1. Servidor estatico escucha en http://localhost:3000, se inicia con 'npm start'
+2. Servidor de desarrollo usa webpack en modo hotreload, escucha en http://localhost:3001 usa el script dev: 'npm run dev'
+3. Para regenerar contendo estático contruir mediante: 'npm run build'
+
+
 # Frontend Test
 
 ## Before you begin
