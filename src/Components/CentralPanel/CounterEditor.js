@@ -22,8 +22,8 @@ class CounterEditor extends Component {
 		if(!this.state.counterName ){
 			alert('Nombre Invalido');
 		}else
-		if(this.state.counterName.length>10 ){
-			alert('Nombre excede 10 letras');
+		if(this.state.counterName.length>15 ){
+			alert('Nombre excede 15 letras');
 		}else{
 			this.props.onAddNewCounter(this.state.counterName);
 			this.setState({

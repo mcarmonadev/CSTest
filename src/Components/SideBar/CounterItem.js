@@ -29,15 +29,29 @@ class CounterItem extends Component {
                 </div>
                 <div className="CounterItemLabel">
 
-                    <div className="CounterItemDetails">{counter.title}  (<font color='green' size='3'>{counter.count}</font>) 
+                    <div className="CounterItemDetails">{counter.title}: &nbsp;<font color='green'  size='3'>{counter.count}</font> 
                     </div>   
                     <div className="CounterItemActions">
-                            <div className="CounterItemAction CounterItemAction_Inc"
-                                onClick={(e) => this.incThisCounter(counter)} >Inc(+)</div>
-                            <div className="CounterItemAction CounterItemAction_Dec"
-                                onClick={(e) => this.decThisCounter(counter)} >Dec(-)</div>
-                            <div className="CounterItemAction CounterItemAction_Del"
-                                onClick={(e) => this.delThisCounter(counter)} >Delete</div>
+                            <div className="CounterItemAction CounterItemAction_Inc">
+                                    <div onClick={(e) => this.incThisCounter(counter)}
+                                            className="CounterItemAction_Btn ">
+                                            Increment
+                                    </div>
+                            </div>
+                            <div className="CounterItemAction CounterItemAction_Dec">
+                                    <div onClick={(e) => this.decThisCounter(counter)}
+                                            className="CounterItemAction_Btn CounterItemAction_Btn_Dec">
+                                            Decremnt
+                                    </div>
+                            </div>
+                            <div className="CounterItemAction CounterItemAction_Del">
+                                    <div onClick={(e) => this.delThisCounter(counter)} 
+                                            className="CounterItemAction_Btn CounterItemAction_Btn_Del">
+                                            Delete
+                                    </div>
+                            </div>
+
+
                     </div>  
                     
                 </div>     

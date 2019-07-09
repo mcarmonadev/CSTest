@@ -68,10 +68,11 @@ html, body {
 
 .CounterItem{
 	width: 100%;	
-	height: 55px;
+	height: 57px;
 	background-color: lightgray;
-    margin-top: 2px;
+    margin-top: 0px;
     display: inline-flex;
+    border:1px solid black;
 }
 .CounterItem:hover{
    background-color:white;
@@ -102,21 +103,21 @@ html, body {
 }
 
 .CounterItemDetails{
-	width:90%;	
+	width:100%;	
 	height: 50%;
 	text-align: left;
     font-family:    Arial, Helvetica, sans-serif;
-    font-size:      15px;
+    font-size:      13x;
     font-weight:    bold;
     margin-top:0px;
 }
 
 .CounterItemActions{
-	width:90%;	
+	width:100%;	
 	height: 20%;
     margin-left: 0px;
     font-family:    Arial, Helvetica, sans-serif;
-    font-size:      12px;
+    font-size:      10px;
     font-weight:    bold;
     color: black;
     margin-top:2px;
@@ -124,7 +125,7 @@ html, body {
 }
 
 .CounterItemAction{
-	width: 32%;	
+	width: 57px;	
     display: inline-flex;
     -webkit-user-select:none; 
     -webkit-touch-callout:none; 
@@ -139,7 +140,7 @@ html, body {
 .CounterItemAction_Inc:hover{
    background-color:white;
    color: blue;
-   cursor: pointer;
+  /* cursor: pointer;*/
 }
 
 .CounterItemAction_Dec{
@@ -148,7 +149,7 @@ html, body {
 .CounterItemAction_Dec:hover{
    background-color:white;
    color: darkred;
-   cursor: pointer;
+  /* cursor: pointer;*/
 }
 
 .CounterItemAction_Del{
@@ -157,9 +158,39 @@ html, body {
 .CounterItemAction_Del:hover{
    background-color:white;
    color: red;
-   cursor: pointer;
+   /*cursor: pointer;*/
 }
 
+.CounterItemAction_Btn {
+  width: 57px;  
+  height: 14px;
+  line-height: 16px;   
+  background-color: #1a1aff;
+  text-align: center;
+    margin-top: 0px;
+    font-size:      8px;
+    font-weight:    bold;
+    margin-left: 0px;
+    cursor: pointer;
+    color: white;
+    border:1px solid gray;
+}
+.CounterItemAction_Btn:hover{
+   background-color:white;
+   color: blue;/**/
+}
+.CounterItemAction_Btn_Dec{
+    margin-left: 3px;
+}
+.CounterItemAction_Btn_Dec:hover{
+   color: #ffcc00;
+}
+.CounterItemAction_Btn_Del{
+    margin-left: 3px;
+}
+.CounterItemAction_Btn_Del:hover{
+   color: red;
+}
 
 .CentralContainer {
   width: 30%;
@@ -338,5 +369,7 @@ html, body {
     font-size:      13px;
     text-align: center;
 }
+
+
 
 
