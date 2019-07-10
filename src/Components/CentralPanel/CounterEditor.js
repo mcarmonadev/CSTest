@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BlockTitle   	from './BlockTitle.js';
+import BlockTitle   	from '../Commons/BlockTitle.js';
 
 class CounterEditor extends Component {
 

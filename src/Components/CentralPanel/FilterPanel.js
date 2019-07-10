@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { loadCounters, updateSelectedCounter, refreshCounter, addCounter, deleteCounter } from '../../Actions/actionCreators'
-import BlockTitle   	from './BlockTitle';
+import BlockTitle   	from '../Commons/BlockTitle.js';
 
 class FilterPanel extends Component {
 

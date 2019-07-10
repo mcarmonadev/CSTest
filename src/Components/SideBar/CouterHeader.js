@@ -22,9 +22,9 @@ class CouterHeader extends Component {
     	let imageSorting;
     	if(this.props.headerType===settings.headerType){
     		if(settings.order==='ASC'){
-    			imageSorting = <img src="/greenarrowup.png" alt="orden ascendente" height="12" width="12"/>;    			
+    			imageSorting = <img src="/img/greenarrowup.png" alt="orden ascendente" height="12" width="12"/>;    			
     		}else{
-    			imageSorting = <img src="/greenarrowdown.png" alt="orden descendente" height="12" width="12"/>;    			
+    			imageSorting = <img src="/img/greenarrowdown.png" alt="orden descendente" height="12" width="12"/>;    			
     		}
     	}
 		return (

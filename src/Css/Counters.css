@@ -12,7 +12,7 @@ html, body {
 }
 
 .SideContainer {
-	width: 20%;
+	width: 30%;
 	background-color: blue;
 	display: flex;
 	flex-flow: column;
@@ -30,22 +30,24 @@ html, body {
 	background-color: gray;
 	text-align: center;
 	line-height: 40px;   
-    color: white;
+  color: white;
+  border: 2px solid black;
+  font-size:      16px;
 }
 
 .CountersListHeaders {
 	width: 100%;	
-	height: 40px;
+	height: 30px;
 	background-color: gray;
     padding-right: 0px;
-  	border-width: 1px 0px 0px 0px;
+  	border-width: 0px 0px 0px 0px;
     border:1px solid white;
   	display: flex;
 }
 
 .CountersListHeader {
 	width: 70%;	
-	height: 20px;
+	height: 100%;
     padding-top: 5px;
     border:1px solid white;
     text-align: center;
@@ -73,6 +75,7 @@ html, body {
     margin-top: 0px;
     display: inline-flex;
     border:1px solid black;
+    color: green;
 }
 .CounterItem:hover{
    background-color:white;
@@ -82,7 +85,7 @@ html, body {
 
 .CounterItem_selected{
 	background-color: orange;
-	color: blue;
+	color: white;
 }
 
 .CounterItemIco{
@@ -110,11 +113,28 @@ html, body {
     font-size:      13x;
     font-weight:    bold;
     margin-top:0px;
+    display: inline-flex;
+}
+.CounterItemDetails_Title{
+  width:80%; 
+  text-align: left;
+   /*background-color:white;*/
+}
+.CounterItemDetails_Count{
+  width:25%; 
+  text-align: center;
+   /*background-color:yellow;*/
+}
+.CounterItemDetails_Count_Frame{
+  width:70%; 
+  text-align: center;
+   background-color:white;
+    border:1px solid gray;
 }
 
 .CounterItemActions{
 	width:100%;	
-	height: 20%;
+	height: 30%;
     margin-left: 0px;
     font-family:    Arial, Helvetica, sans-serif;
     font-size:      10px;
@@ -165,7 +185,7 @@ html, body {
   width: 57px;  
   height: 14px;
   line-height: 16px;   
-  background-color: #1a1aff;
+  background-color: #4d4dff;
   text-align: center;
     margin-top: 0px;
     font-size:      8px;
@@ -183,7 +203,7 @@ html, body {
     margin-left: 3px;
 }
 .CounterItemAction_Btn_Dec:hover{
-   color: #ffcc00;
+   color: blue;
 }
 .CounterItemAction_Btn_Del{
     margin-left: 3px;
@@ -371,5 +391,43 @@ html, body {
 }
 
 
+
+.InfoPanelContainer {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  height: 100%;
+  border:2px solid black;
+
+
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      15px;
+    font-weight:    bold;
+    border:2px solid gray;
+}
+
+
+.InfoPanel {
+  width: 100%;  
+  height: 355px;
+  flex-grow : 1;
+  height: 100%;
+  background-color: blue;
+  overflow-y: scroll;
+}
+
+.Instrucciones {
+  width: 90%;   
+  height: 80%;
+  flex-grow : 1;
+  margin-left: 20px;
+  margin-right: 20px;
+
+    font-family:    Verdana;
+    font-size:      14px;
+    font-weight:    bold;
+    font-style:    italic;
+    color: white;
+}
 
 

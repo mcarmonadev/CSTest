@@ -25,11 +25,21 @@ class CounterItem extends Component {
         let fileClasses = ["CounterItem"];if(this.props.idSelected===this.props.counter.id)fileClasses.push('CounterItem_selected');
         return(          
               <div className={fileClasses.join(' ')}   onClick={(e) => this.selectThisCounter(counter)} >
-                <div className="CounterItemIco"><img src="/count.png" alt="{counter.title}" height="42" width="42"/>
+                <div className="CounterItemIco"><img src="/img/count.png" alt="{counter.title}" height="42" width="42"/>
                 </div>
                 <div className="CounterItemLabel">
 
-                    <div className="CounterItemDetails">{counter.title}: &nbsp;<font color='green'  size='3'>{counter.count}</font> 
+                    <div className="CounterItemDetails">
+                            <div className="CounterItemDetails_Title">
+                                    {counter.title}: &nbsp;
+                            </div>
+                            <div className="CounterItemDetails_Count">
+                                <div className="CounterItemDetails_Count_Frame">
+                                    <font color='green'  size='2'>{counter.count}</font> 
+                                </div>
+                            </div>
+
+                        
                     </div>   
                     <div className="CounterItemActions">
                             <div className="CounterItemAction CounterItemAction_Inc">

@@ -1,5 +1,5 @@
 import React from 'react';
 
-const SideBarTitle = () => <div className="SideBarTitle">Test Contadores</div>;
+const SideBarTitle = () => <div className="SideBarTitle">LISTA CONTADORES</div>;
 
 export default SideBarTitle;

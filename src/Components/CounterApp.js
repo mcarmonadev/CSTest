@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SideBar   from './SideBar/SideBar.js';
 import CentralPanel   from './CentralPanel/CentralPanel.js';
+import InfoPanel   from './InfoPanel/InfoPanel.js';
 
 class CounterApp extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class CounterApp extends Component {
       <div className="MainContainer">     
         <SideBar/>    
         <CentralPanel/> 
+        <InfoPanel/> 
       </div>
     );
   }
