@@ -1,3 +1,30 @@
+#Agregado inciso de la entrega (09-07-2019):
+
+0. Descargar el repo con git clone u otra herramienta:
+
+   git clone https://github.com/mcarmonadev/CSTest.git
+   
+1. En una máquina con nodejs, instalar: 
+
+ 'npm install'
+ 
+2. Hay dos instancias posibles de servidor: dev, y static
+
+3. Servidor estatico escucha en http://localhost:3000, este expone la api backend. Se inicia con:
+  
+  'npm start'
+
+4. Servidor de desarrollo tiene webpack en modo hotreload, escucha en http://localhost:3001 usa el script dev: 
+
+  'npm run dev'
+
+5. Para regenerar contendo estático construir mediante: 
+
+  'npm run build'
+
+...continua texto original
+====================================
+
 # Frontend Test
 
 ## Before you begin
