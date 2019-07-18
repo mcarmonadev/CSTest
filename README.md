@@ -1,5 +1,9 @@
 #Agregado inciso de la entrega (09-07-2019):
 
+Aplicativo en Heroku:
+https://cstestv2.herokuapp.com/
+
+Instrucciones
 0. Descargar el repo con git clone u otra herramienta:
 
    git clone https://github.com/mcarmonadev/CSTest.git
